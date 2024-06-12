@@ -13,6 +13,7 @@ const Map = () => {
     );
     return (
         <div>
+            <h5>Rendering list</h5>
             <ul>{listItems}</ul>
         </div>
     )
