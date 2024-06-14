@@ -1,0 +1,24 @@
+.counter {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.counter.hover {
+    background-color: yellowgreen;
+}
+
+.counter.fancy {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.counter h1 {
+    margin: 0;
+}
+
+.counter button {
+    margin-top: 10px;
+}

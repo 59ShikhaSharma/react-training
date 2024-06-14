@@ -7,10 +7,15 @@ import List from './Components/List';
 import Rendering from './Components/Rendering';
 import Stateseries from './Components/Stateseries';
 import Reactstate from './Components/Reactstate';
+import InputState from './Components/InputState';
+import StateStructure from './Components/StateStructure';
+import SharingState from './Components/SharingState';
+import ResettingState from './Components/ResettingState';
+import './Components/ResettingState.css';
 
 
 const PERSON: { name: string, age: number, image: string } = {
-  name: "Shikha",                                                       
+  name: "Shikha",
   age: 21,
   image: "https://i.imgur.com/7vQD0fPs.jpg"
 };
@@ -37,7 +42,15 @@ function App() {
       <br></br>
       <List />
       <br></br>
-      <Reactstate/>
+      <Reactstate />
+      <br></br>
+      <InputState />
+      <br></br>
+      <StateStructure />
+      <br></br>
+      <SharingState />
+      <br></br>
+      <ResettingState />
     </>
   );
 }
