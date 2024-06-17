@@ -12,7 +12,12 @@ import StateStructure from './Components/StateStructure';
 import SharingState from './Components/SharingState';
 import ResettingState from './Components/ResettingState';
 import './Components/ResettingState.css';
+import './Components/Reference';
+import Reference from './Components/Reference';
+import StopWatch from './Components/StopWatch';
 
+import Section from './UseContext/Section';
+import Heading from './UseContext/Heading';
 
 const PERSON: { name: string, age: number, image: string } = {
   name: "Shikha",
@@ -51,6 +56,29 @@ function App() {
       <SharingState />
       <br></br>
       <ResettingState />
+      <br></br>
+      <Section level={1}>
+      <Heading>Title</Heading>
+      <Section level={2}>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Heading>Heading</Heading>
+        <Section level={3}>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Heading>Sub-heading</Heading>
+          <Section level={4}>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+            <Heading>Sub-sub-heading</Heading>
+          </Section>
+        </Section>
+      </Section>
+    </Section>
+    <br></br>
+    <Reference/>
+    <br></br>
+    <StopWatch/>
     </>
   );
 }
