@@ -1,5 +1,5 @@
 import React, { Children } from 'react'
-import { LevelContext } from './LevelContext'
+import { LevelContext } from '../Components/LevelContext'
 function Section({level,children}) {
     return (
         <Section className="section">

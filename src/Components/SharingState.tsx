@@ -26,7 +26,7 @@ export default function SharingState(){
         isActive={activeIndex === 1}
         onShow={() => setActiveIndex(1)}
       >
-       Generally seen as a pioneering work of zoology, Aristotle frames his text by explaining that he is investigating the what (the existing facts about animals) prior to establishing the why (the causes of these characteristics).
+       Generally seen as a pioneering work of zoology,Aristotle frames his text by explaining that he is investigating the what (the existing facts about animals) prior to establishing the why (the causes of these characteristics).
       </Panel>
     </>
   );
