@@ -19,6 +19,8 @@ import Test from './Components/Test';
 import DomRefs from './Components/DomRefs';
 import VideoPlayer from './Components/VideoPlayer';
 
+import { useEffect } from 'react';
+import { createConnection } from './Components/Chat';
 
 import Section from './Components/Section';
 import Heading from './Components/Heading';
@@ -30,7 +32,12 @@ const PERSON: { name: string, age: number, image: string } = {
 };
 
 
+
 function App() {
+  useEffect(() => {
+    const connection = createConnection();
+    connection.connect();
+  }, []);
   return (
     <>
       <h3>{PERSON.name} is {PERSON.age} years old </h3>
@@ -107,6 +114,9 @@ function App() {
     <hr/>
     <br></br>
     <VideoPlayer/>
+    <hr/>
+    <br></br>
+    <h1>Welcome to the chat </h1>
 
 
    

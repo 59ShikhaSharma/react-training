@@ -34,10 +34,12 @@ const focusInput = () => {
         <h1>Learning Hooks</h1>
         <button onClick={onHandleClick}>Click Me </button>
         <h1>I have rendered {count}</h1>
+        <hr/>
         <UserContext.Provider value={user}>
       <h1>{`Hello ${user}!`}</h1>
       <Component2 />
     </UserContext.Provider>
+    <hr/>
     <h2>Focus the Input </h2>
     <label>
     <input type="text" ref={inputElement} />
@@ -71,6 +73,7 @@ function Component2() {
       <>
         <h3>Component 4</h3>
         <Component5 />
+        
       </>
     );
   }
@@ -82,8 +85,10 @@ function Component2() {
       <>
         <h3>Component 5</h3>
         <h4>{`Hello ${user} again!`}</h4>
+        
       </>
     );
   }
 
+  
 export default Test
