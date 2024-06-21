@@ -21,9 +21,13 @@ import VideoPlayer from './Components/VideoPlayer';
 
 import { useEffect } from 'react';
 import { createConnection } from './Components/Chat';
+import Modal from './Components/Modal';
+import Form from './Components/Form';
+import Show from './Components/Show';
 
-import Section from './Components/Section';
-import Heading from './Components/Heading';
+
+// import Section from './Components/Section';
+// import Heading from './Components/Heading';
 
 const PERSON: { name: string, age: number, image: string } = {
   name: "Shikha",
@@ -82,7 +86,7 @@ function App() {
       <ResettingState />
       <hr/>
       <br></br>
-      <Section level={1}>
+      {/* <Section level={1}>
       <Heading>Title</Heading>
       <Section level={2}>
         <Heading>Heading</Heading>
@@ -99,7 +103,7 @@ function App() {
           </Section>
         </Section>
       </Section>
-    </Section>
+    </Section> */}
     <br></br>
     <Reference/>
     <hr/>
@@ -117,8 +121,15 @@ function App() {
     <hr/>
     <br></br>
     <h1>Welcome to the chat </h1>
-
-
+    <hr/>
+<br></br>
+<Modal/>
+<hr/>
+<br></br>
+<Form/>
+<hr/>
+<br></br>
+<Show/>
    
     </>
   );
